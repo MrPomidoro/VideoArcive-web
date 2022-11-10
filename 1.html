@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1</title>
+  </head>
+  <body>
+    <video id="video" width="800" controls preload >
+      <source src="./video.mp4" type="video/mp4" />
+    </video>
+    <br />
+    <br />
+    <br />
+    <input
+      type="range"
+      id="range"
+      min="0"
+      value="0"
+      oninput="onInput(this.value)"
+      style="width: 600px"
+    />
+    <br />
+    <br />
+    <span id="rangeIn">0 сек</span>
+    <br />
+    <br />
+    <!-- <div style="display: flex; align-items: center;">
+      <button id="pause" onclick="pausedVideo()">Pause</button>
+      <button id="played" onclick="playedVideo()">Played</button>
+      <button id="mute" onclick="mutedVideo()">Mute</button>
+      <button id="unmute" onclick="unMutedVideo()">Un Mute</button>
+      <br />
+      <div style="display: flex; align-items: center; height: 30px">
+        <button onclick="upedSpeed()">speed video ++</button>
+        <p id="textSpeed">1.0</p>
+        <button onclick="lowedSpeed()">-- speed video</button>
+      </div>
+
+      <br />
+      <div style="display: flex">
+        <p>Volume</p>
+        <input
+        id="volume"
+          type="range"
+          min="0.0"
+          value="1"
+          max="1.0"
+          step="0.1"
+          onchange="changeVoulume(this.value)"
+          style="width: 200px"
+        />
+        <p id="rangeValue">100 %</p>
+      </div>
+    </div> -->
+
+    <!-- <script src="./main.js"></script> -->
+    <script src="./main2.js"></script>
+  </body>
+</html>
